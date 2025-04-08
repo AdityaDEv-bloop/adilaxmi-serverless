@@ -1,0 +1,16 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: metacodesolution
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: adilaxmi-serverless-api
+
+provider:
+  name: aws
+  runtime: python3.12
+
+functions:
+  changeLanguage:
+    handler: handler.changeLanguage
+    events:
+      - httpApi:
+          path: /api/changelanguage
+          method: post
