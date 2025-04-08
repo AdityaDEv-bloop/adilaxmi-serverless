@@ -7,5 +7,4 @@ phases:
       - npm install --silent --no-progress -g serverless
   build:
     commands:
-      - serverless login
       - serverless deploy --stage $ENVIROMENT --region $REGION --conceal --verbose
