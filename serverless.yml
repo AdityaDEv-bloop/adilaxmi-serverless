@@ -9,7 +9,7 @@ provider:
 
 functions:
   changeLanguage:
-    handler: handler.changeLanguage
+    handler: handler.change_language.changeLanguage
     events:
       - httpApi:
           path: /api/changelanguage
