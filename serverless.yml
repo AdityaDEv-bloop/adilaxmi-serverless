@@ -8,6 +8,12 @@ provider:
   runtime: python3.12
 
 functions:
+  adlAuthorizer:
+    handler: handler.adl_authorizer.adlAuthorizer
+    events:
+      - httpApi:
+          path: /api/auth
+          method: post
   changeLanguage:
     handler: handler.change_language.changeLanguage
     events:
