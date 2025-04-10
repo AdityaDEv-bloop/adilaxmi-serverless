@@ -2,14 +2,16 @@ name: Check For DB Instances
 
 on:
   push:
-    branches: [ main, dev, stage, qa]
+    branches: ['*' ,main, dev, stage, qa]
 
 jobs:
   run-python:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/python@v4
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.11
+      - uses: actions/setup-python@v3
         with:
           python-version: '3.11'
       - name: Run DB Scripts
