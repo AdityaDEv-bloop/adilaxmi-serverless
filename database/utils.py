@@ -10,8 +10,6 @@ class Utils:
             dns_timeout=10,
             check_smtp=True,
             smtp_timeout=10,
-            smtp_helo_host='my.host.name',
-            smtp_from_address='my@from.addr.ess',
             smtp_skip_tls=False,
             smtp_tls_context=None,
             smtp_debug=False,
