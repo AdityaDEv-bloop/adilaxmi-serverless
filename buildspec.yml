@@ -7,4 +7,5 @@ phases:
       - npm install --silent --no-progress -g serverless
   build:
     commands:
+      - pip install -r requirement.txt
       - serverless deploy --stage $ENVIROMENT --region $REGION --conceal --verbose
