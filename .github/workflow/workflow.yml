@@ -1,9 +1,8 @@
-name: 
+name: Check For DB Instances
 
 on:
   push:
-    branches:
-      - '*' 
+    branches: [ main, dev, stage, qa]
 
 jobs:
   run-python:
