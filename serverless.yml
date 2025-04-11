@@ -27,7 +27,7 @@ functions:
 
 
 layers:
-  python-app-dependencies:
+  aws-fis-extension-x86_64:
     path: layers/tools
     compatibleRuntimes:
       - python3.12
