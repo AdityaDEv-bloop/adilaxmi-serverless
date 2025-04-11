@@ -1,16 +1,13 @@
-import asyncio
-from .utils import Utils
-
-utils = Utils()
+from googletrans import Translator
 
 class ChangeLanguage():
     def __init__(self,language:str,contents:list):
         self.language = language
         self.contents = contents
 
-    def get_translate_content(self):
+    def translate_content(self):
         return_content = []
-        for content in self.contents:
-            result  = asyncio.run(utils.translate_content(self.language,content))
-            return_content.append(result)
+        translator = Translator()
+        translations = translator.translate(self.contents, dest=self.language)
+        for translation in translations: return_content.append(translation.text)
         return return_content
