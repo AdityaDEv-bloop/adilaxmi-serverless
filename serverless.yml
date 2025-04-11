@@ -5,7 +5,7 @@ service: adilaxmi-serverless-api
 
 provider:
   name: aws
-  runtime: python3.12
+  runtime: python3.11
 
 functions:
   adlAuthorizer:
@@ -24,4 +24,3 @@ functions:
       - httpApi:
           path: /api/changelanguage
           method: post
-          
