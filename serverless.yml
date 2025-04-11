@@ -28,7 +28,7 @@ functions:
 
 layers:
   aws-fis-extension-x86_64:
-    path: layers/tools
+    path: adl-lambda-layers/layers/tools
     compatibleRuntimes:
       - python3.12
     description: "Dependencies Lambda Functions"
