@@ -11,7 +11,7 @@ functions:
   adlAuthorizer:
     handler: handler.adl_authorizer.adlAuthorizer
     layers:
-      - arn:aws:lambda:eu-north-1:660876686282:layer:lambdaLayer-adl:1
+      - arn:aws:lambda:eu-north-1:660876686282:layer:adlApiLayer:1
     events:
       - httpApi:
           path: /api/auth
@@ -19,7 +19,7 @@ functions:
   changeLanguage:
     handler: handler.change_language.changeLanguage
     layers:
-      - arn:aws:lambda:eu-north-1:660876686282:layer:lambdaLayer-adl:1
+      - arn:aws:lambda:eu-north-1:660876686282:layer:adlApiLayer:1
     events:
       - httpApi:
           path: /api/changelanguage
