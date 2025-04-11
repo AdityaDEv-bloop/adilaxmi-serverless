@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Run DB Scripts
-        run: | 
+        run: |
           python -m pip install -r requirement_db.txt
           python database/createUser.py
         env:
