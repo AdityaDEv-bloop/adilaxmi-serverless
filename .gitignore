@@ -1,4 +1,5 @@
 # Distribution / packaging
+python/
 .Python
 env/
 build/
@@ -22,3 +23,5 @@ var/
 *.pem
 __pycache__/
 /.env
+*.zip
+dependency/*
