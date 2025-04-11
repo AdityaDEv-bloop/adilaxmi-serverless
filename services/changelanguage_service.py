@@ -1,6 +1,6 @@
 from googletrans import Translator
 
-class ChangeLanguage():
+class ChangeLanguage:
     def __init__(self,language:str,contents:list):
         self.language = language
         self.contents = contents
